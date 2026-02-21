@@ -10,7 +10,7 @@ const Admin = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/registrations');
+                const response = await axios.get('https://prevent-vk5t.onrender.com/api/registrations');
                 setRegistrations(response.data);
             } catch (error) {
                 console.error('Error fetching data:', error);

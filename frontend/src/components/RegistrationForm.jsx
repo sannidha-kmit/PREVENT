@@ -24,7 +24,7 @@ const RegistrationForm = () => {
         setStatus({ type: '', message: '' });
 
         try {
-            const response = await axios.post('http://localhost:5000/api/register', formData);
+            const response = await axios.post('https://prevent-vk5t.onrender.com/api/register', formData);
             setStatus({ type: 'success', message: 'Registration Successful 🎉' });
             setFormData({
                 name: '',
